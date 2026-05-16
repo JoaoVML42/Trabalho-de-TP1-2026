@@ -36,3 +36,30 @@ bool Teste::teste(Tempo tempo) {
     tempos.close();
     return 1;
 }
+
+bool Teste::teste(Papel papel) {
+    ifstream papeis("testadores/papeis.txt");
+    string linha;
+    while(getline(papeis, linha)) {
+        papel.set(linha);}
+    papeis.close();
+    return 1;
+}
+
+bool Teste::teste(Prioridade prioridade) {
+    ifstream prioridades("testadores/prioridades.txt");
+    string linha;
+    while(getline(prioridades, linha)) {
+        prioridade.set(linha);}
+    prioridades.close();
+    return 1;
+}
+
+bool Teste::teste(Estado estado) {
+    ifstream estados("testadores/estados.txt");
+    string linha;
+    while(getline(estados, linha)) {
+        estado.set(linha);}
+    estados.close();
+    return 1;
+}

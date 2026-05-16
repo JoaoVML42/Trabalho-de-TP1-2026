@@ -3,7 +3,7 @@
 bool Tempo::validarTempo(string tempo) {
     unsigned short int dias;
     for (char i : tempo) {
-        if (!(std::isdigit(i))) { return false;}
+        if (!(std::isdigit(i)) && !(std::isblank(i))) { return false;}
     }
     try { dias = stoi(tempo); }
     catch (...) {return false;}

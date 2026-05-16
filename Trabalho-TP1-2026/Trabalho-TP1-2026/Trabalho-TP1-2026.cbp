@@ -40,7 +40,13 @@
 		<Unit filename="Dominios/Tempo.cpp" />
 		<Unit filename="Senha.hpp" />
 		<Unit filename="Tempo.hpp" />
+		<Unit filename="Testador.cpp" />
+		<Unit filename="Testador.hpp" />
 		<Unit filename="main.cpp" />
+		<Unit filename="testadores/codigos.txt" />
+		<Unit filename="testadores/datas.txt" />
+		<Unit filename="testadores/senhas.txt" />
+		<Unit filename="testadores/tempos.txt" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

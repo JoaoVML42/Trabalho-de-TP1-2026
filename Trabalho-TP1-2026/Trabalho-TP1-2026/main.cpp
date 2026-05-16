@@ -4,6 +4,9 @@
 #include "Codigo.hpp"
 #include "Tempo.hpp"
 #include "Senha.hpp"
+#include "Papel.hpp"
+#include "Prioridade.hpp"
+#include "Estado.hpp"
 #include "Testador.hpp"
 using namespace std;
 
@@ -27,7 +30,22 @@ int main()
     Teste testeTempo;
     Tempo tempo;
     testeTempo.teste(tempo);
+    cout << endl << endl;
 
+    Teste testePapel;
+    Papel papel;
+    testePapel.teste(papel);
+    cout << endl << endl;
+
+    Teste testePrioridade;
+    Prioridade prioridade;
+    testePrioridade.teste(prioridade);
+    cout << endl << endl;
+
+    Teste testeEstado;
+    Estado estado;
+    testeEstado.teste(estado);
+    cout << endl << endl;
 
     return 0;
 }
