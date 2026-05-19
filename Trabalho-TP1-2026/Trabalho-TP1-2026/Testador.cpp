@@ -63,3 +63,21 @@ bool Teste::teste(Estado estado) {
     estados.close();
     return 1;
 }
+
+bool Teste::teste(Email email) {
+    ifstream emails("testadores/emails.txt");
+    string linha;
+    while(getline(emails, linha)) {
+        email.set(linha);}
+    emails.close();
+    return 1;
+}
+
+bool Teste::teste(Texto texto) {
+    ifstream textos("testadores/textos.txt");
+    string linha;
+    while(getline(textos, linha)) {
+        texto.set(linha);}
+    textos.close();
+    return 1;
+}

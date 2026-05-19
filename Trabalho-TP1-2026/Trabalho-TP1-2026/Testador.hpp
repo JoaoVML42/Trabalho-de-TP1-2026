@@ -3,9 +3,11 @@
 #include "Codigo.hpp"
 #include "Data.hpp"
 #include "Estado.hpp"
+#include "Email.hpp"
 #include "Senha.hpp"
 #include "Tempo.hpp"
 #include "Testador.hpp"
+#include "Texto.hpp"
 #include "Papel.hpp"
 #include "Prioridade.hpp"
 #include <fstream>
@@ -20,5 +22,7 @@ class Teste {
         bool teste(Tempo tempo); // valor de 1 a 365
         bool teste(Papel papel); // DESENVOLVEDOR, MESTRE SCRUM, PROPRIETARIO DE PRODUTO.
         bool teste(Prioridade prioridade); // ALTA, MEDIA, BAIXA.
+        bool teste(Email email); // parte1 = 64chars, alphanum, . & -; parte2 = @... 255chars, alphanum, . & -; char[0] != . & -;
+        bool teste(Texto texto); // 40char, deve comecar e terminar com alphanum, '.' & ',' nao podem se repetir ou vir depois de ' ';
 };
 #endif // TESTADOR_HPP_INCLUDED

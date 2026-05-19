@@ -36,17 +36,31 @@
 		<Unit filename="Data.hpp" />
 		<Unit filename="Dominios/Codigo.cpp" />
 		<Unit filename="Dominios/Data.cpp" />
+		<Unit filename="Dominios/Email.cpp" />
+		<Unit filename="Dominios/Estado.cpp" />
+		<Unit filename="Dominios/Papel.cpp" />
+		<Unit filename="Dominios/Prioridade.cpp" />
 		<Unit filename="Dominios/Senha.cpp" />
 		<Unit filename="Dominios/Tempo.cpp" />
+		<Unit filename="Dominios/Texto.cpp" />
+		<Unit filename="Email.hpp" />
+		<Unit filename="Estado.hpp" />
+		<Unit filename="Papel.hpp" />
+		<Unit filename="Prioridade.hpp" />
 		<Unit filename="Senha.hpp" />
 		<Unit filename="Tempo.hpp" />
 		<Unit filename="Testador.cpp" />
 		<Unit filename="Testador.hpp" />
+		<Unit filename="Texto.hpp" />
 		<Unit filename="main.cpp" />
 		<Unit filename="testadores/codigos.txt" />
 		<Unit filename="testadores/datas.txt" />
+		<Unit filename="testadores/emails.txt" />
+		<Unit filename="testadores/papeis.txt" />
+		<Unit filename="testadores/prioridades.txt" />
 		<Unit filename="testadores/senhas.txt" />
 		<Unit filename="testadores/tempos.txt" />
+		<Unit filename="testadores/textos.txt" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

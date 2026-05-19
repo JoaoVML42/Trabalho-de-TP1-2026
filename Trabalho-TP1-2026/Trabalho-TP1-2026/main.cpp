@@ -7,7 +7,10 @@
 #include "Papel.hpp"
 #include "Prioridade.hpp"
 #include "Estado.hpp"
+#include "Email.hpp"
+#include "Texto.hpp"
 #include "Testador.hpp"
+
 using namespace std;
 
 int main()
@@ -45,6 +48,16 @@ int main()
     Teste testeEstado;
     Estado estado;
     testeEstado.teste(estado);
+    cout << endl << endl;
+
+    Teste testeEmail;
+    Email email;
+    testeEmail.teste(email);
+    cout << endl << endl;
+
+    Teste testeTexto;
+    Texto texto;
+    testeTexto.teste(texto);
     cout << endl << endl;
 
     return 0;

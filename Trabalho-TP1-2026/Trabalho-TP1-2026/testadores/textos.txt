@@ -1,0 +1,6 @@
+Um texto valido 42
+Um texto invalido 42.
+ Outro invalido
+Virgula, Ponto. Numero 10
+Virgula, . Ponto, eita
+Eu @ nao sei mais de nada
