@@ -1,4 +1,4 @@
-#include "../Codigo.hpp"
+#include "../include/Codigo.hpp"
 #include <cctype>
 #include <iostream>
 using namespace std;

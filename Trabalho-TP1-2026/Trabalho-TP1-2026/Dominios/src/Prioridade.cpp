@@ -1,4 +1,4 @@
-#include "../Prioridade.hpp"
+#include "../include/Prioridade.hpp"
 using namespace std;
 
 bool Prioridade::validarPrioridade(string prioridade) {

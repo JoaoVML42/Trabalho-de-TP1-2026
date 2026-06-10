@@ -1,4 +1,4 @@
-#include "../Papel.hpp"
+#include "../include/Papel.hpp"
 using namespace std;
 
 bool Papel::validarPapel(string papel) {

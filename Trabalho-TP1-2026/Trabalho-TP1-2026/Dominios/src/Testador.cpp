@@ -1,4 +1,4 @@
-#include "Testador.hpp"
+#include "../include/Testador.hpp"
 using namespace std;
 
 bool Teste::teste(Codigo codigo) {

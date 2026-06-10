@@ -1,4 +1,4 @@
-#include "../Tempo.hpp"
+#include "../include/Tempo.hpp"
 
 bool Tempo::validarTempo(string tempo) {
     unsigned short int dias;

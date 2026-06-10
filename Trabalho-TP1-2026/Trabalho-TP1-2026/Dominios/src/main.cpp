@@ -1,15 +1,15 @@
 #include <iostream>
 #include <string>
-#include "Data.hpp"
-#include "Codigo.hpp"
-#include "Tempo.hpp"
-#include "Senha.hpp"
-#include "Papel.hpp"
-#include "Prioridade.hpp"
-#include "Estado.hpp"
-#include "Email.hpp"
-#include "Texto.hpp"
-#include "Testador.hpp"
+#include "../include/Data.hpp"
+#include "../include/Codigo.hpp"
+#include "../include/Tempo.hpp"
+#include "../include/Senha.hpp"
+#include "../include/Papel.hpp"
+#include "../include/Prioridade.hpp"
+#include "../include/Estado.hpp"
+#include "../include/Email.hpp"
+#include "../include/Texto.hpp"
+#include "../include/Testador.hpp"
 
 using namespace std;
 

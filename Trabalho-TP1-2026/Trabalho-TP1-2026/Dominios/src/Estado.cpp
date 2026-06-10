@@ -1,4 +1,4 @@
-#include "../Estado.hpp"
+#include "../include/Estado.hpp"
 using namespace std;
 
 bool Estado::validarEstado(string estado) {

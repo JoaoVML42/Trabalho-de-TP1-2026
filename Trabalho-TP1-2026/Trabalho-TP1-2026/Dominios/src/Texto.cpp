@@ -1,4 +1,4 @@
-#include "../Texto.hpp"
+#include "../include/Texto.hpp"
 using namespace std;
 
 bool Texto::validarTexto(string texto) {
