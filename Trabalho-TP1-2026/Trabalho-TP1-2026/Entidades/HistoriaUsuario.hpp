@@ -46,11 +46,14 @@ public:
     void setDescricaoValor(const Texto& valor) { this->descricaoValor = valor; }
     Texto getDescricaoValor() const { return descricaoValor; }
 
-    void setTempo(const Texto& estimativa) { this->estimativa = estimativa; }
-    Tempo getTempo() const { return estimativa; }
+    void setEstimativa(const Tempo& estimativa) { this->estimativa = estimativa; }
+    Tempo getEstimativa() const { return estimativa; }
 
     void setPrioridade(const Prioridade& prioridade) { this->prioridade = prioridade; }
-    Texto getPrioridade() const { return prioridade; }
+    Prioridade getPrioridade() const { return prioridade; }
+
+    void setEstado(const Estado& estado) { this->estado = estado; }
+    Estado getEstado() const { return estado; }
 };
 
 #endif
