@@ -8,7 +8,11 @@ class IServicoHistorias {
 public:
     virtual ~IServicoHistorias() {}
 
-    virtual bool salvarHistoria(const Codigo& ) = 0;
+    virtual bool salvarHistoria(const Codigo& historia) = 0;
+
+    virtual bool excluirHistoria(const Codigo& historiaId) = 0;
+
+    virtual HistoriaUsuario buscarHistoria(const Codigo& historiaId) = 0;
 };
 
 #endif
