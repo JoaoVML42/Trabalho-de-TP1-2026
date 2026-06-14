@@ -14,7 +14,7 @@ public:
     void setCodigo(const Codigo& codigo) { this->codigo = codigo; }
     Codigo getCodigo() const { return codigo; }
 
-    void setProjetoId(const Codigo& ProjetoId) { this->projetoId = ProjetoId; }
+    void setProjetoId(const Codigo& projetoId) { this->projetoId = projetoId; }
     Codigo getProjetoId() const { return projetoId; }
 
     void setTempo(const Tempo& tempo) { this->tempo = tempo; }
