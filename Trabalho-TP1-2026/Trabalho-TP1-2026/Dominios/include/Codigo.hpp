@@ -11,7 +11,7 @@ class Codigo{
         bool validarCodigo(string codigo);
     public:
         void set(string codigo);
-        string get() {return codigo;}
+        string get() const {return codigo;}
 };
 
 

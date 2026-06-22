@@ -11,7 +11,7 @@ class Senha {
         bool validarSenha(string senha);
     public:
         void set(string senha);
-        string get() { return senha;}
+        string get() const { return senha;}
         };
 
 #endif // SENHA_HPP_INCLUDED

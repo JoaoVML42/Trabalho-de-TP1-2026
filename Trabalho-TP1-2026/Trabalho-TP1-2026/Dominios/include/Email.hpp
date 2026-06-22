@@ -13,7 +13,7 @@ class Email {
         bool validarEmail(string email);
     public:
         void set(string email);
-        string get() { return email;}
+        string get() const { return email;}
 };
 
 
