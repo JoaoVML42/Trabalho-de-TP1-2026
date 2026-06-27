@@ -2,44 +2,37 @@
 using namespace std;
 
 bool Senha::validarSenha(string senha) {
-    unsigned short int alpha = 0;
-    unsigned short int numerical = 0;
+    // 1. Verificar tamanho exato de 6 caracteres
+    if (senha.length() != 6) { return false; }
 
-    unsigned short int uppercase = 0;
-    unsigned short int lowercase = 0;
-    unsigned short int number = 0;
+    bool possui_maiuscula = false;
+    bool possui_minuscula = false;
+    bool possui_digito = false;
 
-    if (senha.length() != 6) { return false;}
-    for (char i : senha) {
-        if (std::isupper(i)) {
-        uppercase += 1;} //dica avancada gemini
-        else if (std::islower(i)) {
-        lowercase += 1;}
-        else if (std::isdigit(i)) {
-        number += 1;}
-        else { return false;}
+    for (char c : senha) {
+        if (std::isupper(c)) { possui_maiuscula = true; }
+        else if (std::islower(c)) { possui_minuscula = true; }
+        else if (std::isdigit(c)) { possui_digito = true; }
+        else { return false; } // Se não for letra nem número, é inválido (ex: @, #)
     }
-    if (uppercase == 0 || lowercase == 0 || number == 0) { return false;}
 
-    for (char i : senha) {
-        if (std::isalpha(i)) {
-            alpha += 1;
-            if (numerical >= 1){ numerical--;}
-        }
-        if (std::isdigit(i)) {
-            numerical +=1;
-            if (alpha >= 1) { alpha--;}
-        }
+    if (!possui_maiuscula || !possui_minuscula || !possui_digito) { return false; }
+
+    for (size_t i = 0; i < senha.length() - 1; i++) {
+        // Se o caractere atual E o próximo forem letras -> ERRO
+        if (std::isalpha(senha[i]) && std::isalpha(senha[i + 1])) { return false; }
+        
+        // Se o caractere atual E o próximo forem dígitos -> ERRO
+        if (std::isdigit(senha[i]) && std::isdigit(senha[i + 1])) { return false; }
     }
-    if (alpha > 1 || numerical > 1 || alpha == numerical) { return false;}
-    else { return true;}
+
+    return true;
 }
 
 void Senha::set(string senha) {
     if (validarSenha(senha)){
         this->senha = senha;
         cout << "A senha " << senha << " foi salva." << endl;}
-    // No seu Senha.cpp, mude o else do seu método set para:
 else {
     throw invalid_argument("Senha invalida! O formato nao atende aos requisitos.");
 }}
