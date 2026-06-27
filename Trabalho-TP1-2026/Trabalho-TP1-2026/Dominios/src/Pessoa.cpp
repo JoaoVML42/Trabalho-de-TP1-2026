@@ -1,4 +1,4 @@
-#include "../include/Pessoa.hpp"
+#include "../Entidades/Pessoa.hpp"
 
 void Pessoa::setEmail(const Email& email) { this->email = email; }
 Email Pessoa::getEmail() const { return email; }
