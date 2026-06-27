@@ -14,17 +14,17 @@ private:
     Papel papel;
 
 public:
-    void setEmail(const Email& email) { this->email = email; }
-    Email getEmail() const { return email; }
+    void setEmail(const Email& email);
+    Email getEmail() const;
 
-    void setNome(const Texto& nome) { this->nome = nome; }
-    Texto getNome() const { return nome; }
+    void setNome(const Texto& nome);
+    Texto getNome() const;
 
-    void setSenha(const Senha& senha) { this->senha = senha; }
-    Senha getSenha() const { return senha; }
+    void setSenha(const Senha& senha);
+    Senha getSenha() const;
 
-    void setPapel(const Papel& papel) { this->papel = papel; }
-    Papel getPapel() const { return papel; }
+    void setPapel(const Papel& papel);
+    Papel getPapel() const;
 };
 
 #endif
