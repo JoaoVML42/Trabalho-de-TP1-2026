@@ -1,0 +1,106 @@
+# depslib dependency file v1.0
+1780814226 source:c:\faculdade unb\tp1\trabalho\trabalho-de-tp1-2026\trabalho-tp1-2026\trabalho-tp1-2026\dominios\src\codigo.cpp
+	"../include/Codigo.hpp"
+	<cctype>
+	<iostream>
+
+1781826644 c:\faculdade unb\tp1\trabalho\trabalho-de-tp1-2026\trabalho-tp1-2026\trabalho-tp1-2026\dominios\include\codigo.hpp
+	<string>
+	<sstream>
+
+1780814228 source:c:\faculdade unb\tp1\trabalho\trabalho-de-tp1-2026\trabalho-tp1-2026\trabalho-tp1-2026\dominios\src\data.cpp
+	"../include/Data.hpp"
+	<sstream>
+	<stdexcept>
+
+1780782668 c:\faculdade unb\tp1\trabalho\trabalho-de-tp1-2026\trabalho-tp1-2026\trabalho-tp1-2026\dominios\include\data.hpp
+	<iostream>
+	<string>
+
+1782532914 source:c:\faculdade unb\tp1\trabalho\trabalho-de-tp1-2026\trabalho-tp1-2026\trabalho-tp1-2026\dominios\src\email.cpp
+	"../include/Email.hpp"
+	<algorithm>
+	<cctype>
+	<stdexcept>
+
+1781823844 c:\faculdade unb\tp1\trabalho\trabalho-de-tp1-2026\trabalho-tp1-2026\trabalho-tp1-2026\dominios\include\email.hpp
+	<string>
+	<algorithm>
+	<sstream>
+	<vector>
+	<iostream>
+
+1780814233 source:c:\faculdade unb\tp1\trabalho\trabalho-de-tp1-2026\trabalho-tp1-2026\trabalho-tp1-2026\dominios\src\estado.cpp
+	"../include/Estado.hpp"
+
+1780782668 c:\faculdade unb\tp1\trabalho\trabalho-de-tp1-2026\trabalho-tp1-2026\trabalho-tp1-2026\dominios\include\estado.hpp
+	<iostream>
+	<string>
+	<algorithm>
+	<vector>
+
+1782533503 source:c:\faculdade unb\tp1\trabalho\trabalho-de-tp1-2026\trabalho-tp1-2026\trabalho-tp1-2026\dominios\src\papel.cpp
+	"../include/Papel.hpp"
+	<vector>
+	<algorithm>
+	<iostream>
+	<stdexcept>
+	<cctype>
+
+1782523267 c:\faculdade unb\tp1\trabalho\trabalho-de-tp1-2026\trabalho-tp1-2026\trabalho-tp1-2026\dominios\include\papel.hpp
+	<string>
+	<vector>
+	<algorithm>
+	<iostream>
+
+1780813193 source:c:\faculdade unb\tp1\trabalho\trabalho-de-tp1-2026\trabalho-tp1-2026\trabalho-tp1-2026\dominios\src\prioridade.cpp
+	"../include/Prioridade.hpp"
+
+1780782668 c:\faculdade unb\tp1\trabalho\trabalho-de-tp1-2026\trabalho-tp1-2026\trabalho-tp1-2026\dominios\include\prioridade.hpp
+	<string>
+	<iostream>
+	<algorithm>
+	<vector>
+
+1782520260 source:c:\faculdade unb\tp1\trabalho\trabalho-de-tp1-2026\trabalho-tp1-2026\trabalho-tp1-2026\dominios\src\senha.cpp
+	"../include/Senha.hpp"
+
+1781823847 c:\faculdade unb\tp1\trabalho\trabalho-de-tp1-2026\trabalho-tp1-2026\trabalho-tp1-2026\dominios\include\senha.hpp
+	<string>
+	<cctype>
+	<iostream>
+
+1780813023 source:c:\faculdade unb\tp1\trabalho\trabalho-de-tp1-2026\trabalho-tp1-2026\trabalho-tp1-2026\dominios\src\tempo.cpp
+	"../include/Tempo.hpp"
+
+1780782668 c:\faculdade unb\tp1\trabalho\trabalho-de-tp1-2026\trabalho-tp1-2026\trabalho-tp1-2026\dominios\include\tempo.hpp
+	<iostream>
+	<string>
+
+1780814220 source:c:\faculdade unb\tp1\trabalho\trabalho-de-tp1-2026\trabalho-tp1-2026\trabalho-tp1-2026\dominios\src\testador.cpp
+	"../include/Testador.hpp"
+
+1780782668 c:\faculdade unb\tp1\trabalho\trabalho-de-tp1-2026\trabalho-tp1-2026\trabalho-tp1-2026\dominios\include\testador.hpp
+	"Codigo.hpp"
+	"Data.hpp"
+	"Estado.hpp"
+	"Email.hpp"
+	"Senha.hpp"
+	"Tempo.hpp"
+	"Testador.hpp"
+	"Texto.hpp"
+	"Papel.hpp"
+	"Prioridade.hpp"
+	<fstream>
+
+1782529128 c:\faculdade unb\tp1\trabalho\trabalho-de-tp1-2026\trabalho-tp1-2026\trabalho-tp1-2026\dominios\include\texto.hpp
+	<iostream>
+	<string>
+	<algorithm>
+
+1782534064 source:c:\faculdade unb\tp1\trabalho\trabalho-de-tp1-2026\trabalho-tp1-2026\trabalho-tp1-2026\dominios\src\texto.cpp
+	"../include/Texto.hpp"
+	<iostream>
+	<cctype>
+	<stdexcept>
+
