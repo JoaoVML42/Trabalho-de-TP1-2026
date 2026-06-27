@@ -8,11 +8,11 @@ using namespace std;
 
 class Papel {
     private:
-        string papel = "Papel em branco.";
-        bool validarPapel(string papel);
+        std::string papel = "Papel em branco.";
+        bool validarPapel(std::string papel);
     public:
-        string get() { return papel;}
-        void set(string papel);
+        std::string get() const { return papel; }
+        void set(std::string papel);
 };
 
 
