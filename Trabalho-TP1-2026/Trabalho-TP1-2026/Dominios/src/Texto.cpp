@@ -38,3 +38,4 @@ void Texto::set(string texto) {
     else {
         throw invalid_argument("Texto invalido! Nao atende aos criterios de pontuacao ou tamanho.");
 }
+}

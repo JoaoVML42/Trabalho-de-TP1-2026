@@ -46,3 +46,4 @@ void Papel::set(string papel) {
     else {
         throw invalid_argument("Papel invalido! Digite algo como Desenvolvedor, Scrum Master ou Proprietario de Produto.");
 }
+}
