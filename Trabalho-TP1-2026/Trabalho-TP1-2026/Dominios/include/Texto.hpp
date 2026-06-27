@@ -8,9 +8,9 @@ using namespace std;
 class Texto {
     private:
         string texto = "texto vazio";
-        bool validarTexto(string texto);
+        bool validarTexto(std::string texto);
     public:
-        void set(string texto);
+        void set(std::string texto);
         string get() { return texto;}
 };
 
