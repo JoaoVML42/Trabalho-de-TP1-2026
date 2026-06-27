@@ -39,5 +39,7 @@ void Senha::set(string senha) {
     if (validarSenha(senha)){
         this->senha = senha;
         cout << "A senha " << senha << " foi salva." << endl;}
-    else {
-        cout << "Senha invalida. Tente novamente. " << senha << endl;}}
+    // No seu Senha.cpp, mude o else do seu método set para:
+else {
+    throw invalid_argument("Senha invalida! O formato nao atende aos requisitos.");
+}}

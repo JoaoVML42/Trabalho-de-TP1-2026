@@ -1,64 +1,77 @@
 #include <iostream>
 #include <string>
-#include "../include/Data.hpp"
-#include "../include/Codigo.hpp"
-#include "../include/Tempo.hpp"
-#include "../include/Senha.hpp"
-#include "../include/Papel.hpp"
-#include "../include/Prioridade.hpp"
-#include "../include/Estado.hpp"
+#include <stdexcept> // Necessário para capturar invalid_argument
+#include "../../Controladoras/ControladorAutenticacao.hpp"
 #include "../include/Email.hpp"
-#include "../include/Texto.hpp"
-#include "../include/Testador.hpp"
+#include "../include/Senha.hpp"
 
 using namespace std;
 
-int main()
-{
-    Teste testeCodigo;
-    Codigo codigo;
-    testeCodigo.teste(codigo);
-    cout << endl << endl;
+int main() {
+    ControladorAutenticacao servicoAutenticacao;
+    int opcaoGeral = 0;
 
-    Teste testeData;
-    Data data;
-    testeData.teste(data);
-    cout << endl << endl;
+    while (opcaoGeral != 3) {
+        cout << "========================================" << endl;
+        cout << "    SISTEMA DE GESTAO DE PROJETOS (TP1) " << endl;
+        cout << "========================================" << endl;
+        cout << "1. Entrar no Sistema (Login)" << endl;
+        cout << "2. Rodar Testes de Dominio (Parte 1)" << endl;
+        cout << "3. Sair" << endl;
+        cout << "Escolha uma opcao: ";
+        cin >> opcaoGeral;
 
-    Teste testeSenha;
-    Senha senha;
-    testeSenha.teste(senha);
-    cout << endl << endl;
+        switch (opcaoGeral) {
+            case 1: { // --- TELA DE LOGIN ---
+                string entradaEmail, entradaSenha;
+                
+                cout << "\n--- TELA DE LOGIN ---" << endl;
+                cout << "Digite seu e-mail: ";
+                cin >> entradaEmail;
+                cout << "Digite sua senha: ";
+                cin >> entradaSenha;
 
-    Teste testeTempo;
-    Tempo tempo;
-    testeTempo.teste(tempo);
-    cout << endl << endl;
+                try {
+                    // Validando os dados usando seus domínios
+                    Email email;
+                    Senha senha;
+                    
+                    email.set(entradaEmail);
+                    senha.set(entradaSenha);
 
-    Teste testePapel;
-    Papel papel;
-    testePapel.teste(papel);
-    cout << endl << endl;
+                    // Chamando a controladora de autenticação
+                    if (servicoAutenticacao.autenticar(email, senha)) {
+                        cout << "\n[SUCESSO] Login aceito pelo simulador!" << endl;
+                        cout << "carregando ambiente principal do desenvolvedor...\n" << endl;
+                        
+                        // TODO: Menu interno de Projetos/Sprints/Histórias entra aqui!
+                        
+                    } else {
+                        cout << "\n[ERRO] credenciais rejeitadas pelo simulador." << endl;
+                    }
 
-    Teste testePrioridade;
-    Prioridade prioridade;
-    testePrioridade.teste(prioridade);
-    cout << endl << endl;
+                } catch (const invalid_argument& e) {
+                    // Se o set da Senha ou do Email lançar um throw, o programa cai aqui com segurança
+                    cout << "\n[ERRO DE VALIDACAO] " << e.what() << endl;
+                }
+                break;
+            }
 
-    Teste testeEstado;
-    Estado estado;
-    testeEstado.teste(estado);
-    cout << endl << endl;
+            case 2:
+                cout << "\n=== EXECUTANDO TESTES UNITARIOS ===" << endl;
+                // Aqui você pode chamar as funções ou classes de teste da Parte 1
+                cout << "Testes executados com sucesso.\n" << endl;
+                break;
 
-    Teste testeEmail;
-    Email email;
-    testeEmail.teste(email);
-    cout << endl << endl;
+            case 3:
+                cout << "\nSaindo do sistema." << endl;
+                break;
 
-    Teste testeTexto;
-    Texto texto;
-    testeTexto.teste(texto);
-    cout << endl << endl;
+            default:
+                cout << "\nOpcao invalida! Escolha entre 1, 2 ou 3.\n" << endl;
+                break;
+        }
+    }
 
     return 0;
 }

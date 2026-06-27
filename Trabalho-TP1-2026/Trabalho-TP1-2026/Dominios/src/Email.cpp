@@ -11,9 +11,11 @@ bool Email::validarEmail(string email) {
     parte_local.append(email.substr(0, at));
     dominio.append(email.substr(at + 1, email.length()));
 
-    if (parte_local[0] == '.' || parte_local[0] == '-' || parte_local[-1] == '.' || parte_local[-1] == '-') {
-    return false;}
-    if (dominio[0] == '-' || dominio[-1] == '-') { return false;}
+    if (parte_local.empty() || dominio.empty()) { return false; }
+    if (parte_local.front() == '.' || parte_local.front() == '-' || parte_local.back() == '.' || parte_local.back() == '-') {
+        return false;
+    }
+    if (dominio.front() == '-' || dominio.back() == '-') { return false; }
     if (parte_local.length() > 64 || dominio.length() > 255) { return false;}
 
     int repeticao = 0;
@@ -33,5 +35,6 @@ void Email::set(string email) {
         cout << "O email " << email << " foi registrado com sucesso." << endl;
     }
     else {
-        cout << "O email " << email << " é inválido." << endl;}
+        throw invalid_argument("Email invalido! O formato nao atende aos requisitos.");
+    }   
 }
