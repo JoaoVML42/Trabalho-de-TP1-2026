@@ -40,11 +40,19 @@
         <Unit filename="main.cpp" />
 
         <Unit filename="Controladoras/ControladorAutenticacao.hpp" />
-        <Unit filename="Interfaces/IServicoAutenticacao.hpp" />
+		<Unit filename="Controladoras/ControladorHistoria.hpp" />
+		<Unit filename="Controladoras/ControladorProjetos.hpp" />
+		<Unit filename="Controladoras/ControladorSprint.hpp" />
 
+        <Unit filename="Interfaces/IServicoAutenticacao.hpp" />
+		<Unit filename="Interfaces/IServicoHistorias.hpp" />
+		<Unit filename="Interfaces/IServicoProjetos.hpp" />
+		<Unit filename="Interfaces/IServicoSprints.hpp" />
+
+		<Unit filename="Entidades/HistoriaUsuario.hpp" />
         <Unit filename="Entidades/Pessoa.hpp" />
         <Unit filename="Entidades/Projeto.hpp" />
-        <Unit filename="Entidades/Tarefa.hpp" />
+        <Unit filename="Entidades/PlanoSprint.hpp" />
 
         <Unit filename="Dominios/include/Codigo.hpp" />
         <Unit filename="Dominios/include/Data.hpp" />
@@ -54,6 +62,7 @@
         <Unit filename="Dominios/include/Prioridade.hpp" />
         <Unit filename="Dominios/include/Senha.hpp" />
         <Unit filename="Dominios/include/Tempo.hpp" />
+		<Unit filename="Dominios/include/Testador.hpp" />
         <Unit filename="Dominios/include/Texto.hpp" />
 
         <Unit filename="Dominios/src/Codigo.cpp" />
@@ -65,6 +74,8 @@
         <Unit filename="Dominios/src/Senha.cpp" />
         <Unit filename="Dominios/src/Tempo.cpp" />
         <Unit filename="Dominios/src/Texto.cpp" />
+		<Unit filename="Dominios/src/Senha.cpp" />
+		<Unit filename="Dominios/src/Testador.cpp" />
 
         <Extensions />
     </Project>
