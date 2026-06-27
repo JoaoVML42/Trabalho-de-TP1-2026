@@ -1,9 +1,15 @@
 #include "../include/Texto.hpp"
+#include <iostream>
+#include <cctype>
+#include <stdexcept>
+
 using namespace std;
 
 bool Texto::validarTexto(string texto) {
     if (texto.length() > 40 || texto.empty()) { return false;}
     if (texto[0] == ' ' || texto[0] == '.' || texto[0] == ',') { return false;}
+    if (texto.back() == ' ' || texto.back() == '.' || texto.back() == ',') { return false;}
+
     int iterador = 0;
     int iterador2 = 0;
     for (char c : texto) {
@@ -14,6 +20,10 @@ bool Texto::validarTexto(string texto) {
 
         if (c == ' ') { iterador2++;}
         else if (std::isalnum(c)) { iterador2 = 0;}
+        else if (c == '.' || c == ',') { 
+            // Se um espaço for seguido por pontuação, a regra do PDF quebra
+            if (iterador2 == 1) return false; 
+        }
         if (iterador2 > 1) { return false;}
     }
     if (iterador == 1 || iterador2 == 1) { return false;}
@@ -26,5 +36,5 @@ void Texto::set(string texto) {
         this->texto = texto;
         cout << "O comentário ''" << endl << texto << endl << "'' Foi salvo." << endl;}
     else {
-        cout << "O comentário ''" << endl << texto << endl << "'' É inválido." << endl;}
+        throw invalid_argument("Texto invalido! Nao atende aos criterios de pontuacao ou tamanho.");
 }
