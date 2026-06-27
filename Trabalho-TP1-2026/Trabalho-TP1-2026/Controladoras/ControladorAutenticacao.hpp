@@ -10,7 +10,7 @@
 class ControladorAutenticacao : public IServicoAutenticacao {
 public:
     bool autenticar(const Email& email, const Senha& senha) override {
-        if (email.get() == "admin@unb.br" && senha.get() == "Senha123") {
+        if (email.get() == "admin@unb.br" && senha.get() == "A1b2C3") {
             return true;
         }
         return false;
