@@ -1,66 +1,71 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_project_file>
-	<FileVersion major="1" minor="6" />
-	<Project>
-		<Option title="Trabalho-TP1-2026" />
-		<Option pch_mode="2" />
-		<Option compiler="gcc" />
-		<Build>
-			<Target title="Debug">
-				<Option output="bin/Debug/Trabalho-TP1-2026" prefix_auto="1" extension_auto="1" />
-				<Option object_output="obj/Debug/" />
-				<Option type="1" />
-				<Option compiler="gcc" />
-				<Compiler>
-					<Add option="-g" />
-				</Compiler>
-			</Target>
-			<Target title="Release">
-				<Option output="bin/Release/Trabalho-TP1-2026" prefix_auto="1" extension_auto="1" />
-				<Option object_output="obj/Release/" />
-				<Option type="1" />
-				<Option compiler="gcc" />
-				<Compiler>
-					<Add option="-O2" />
-				</Compiler>
-				<Linker>
-					<Add option="-s" />
-				</Linker>
-			</Target>
-		</Build>
-		<Compiler>
-			<Add option="-Wall" />
-			<Add option="-fexceptions" />
-		</Compiler>
-		<Unit filename="Codigo.hpp" />
-		<Unit filename="Data.hpp" />
-		<Unit filename="Dominios/Codigo.cpp" />
-		<Unit filename="Dominios/Data.cpp" />
-		<Unit filename="Dominios/Email.cpp" />
-		<Unit filename="Dominios/Estado.cpp" />
-		<Unit filename="Dominios/Papel.cpp" />
-		<Unit filename="Dominios/Prioridade.cpp" />
-		<Unit filename="Dominios/Senha.cpp" />
-		<Unit filename="Dominios/Tempo.cpp" />
-		<Unit filename="Dominios/Texto.cpp" />
-		<Unit filename="Email.hpp" />
-		<Unit filename="Estado.hpp" />
-		<Unit filename="Papel.hpp" />
-		<Unit filename="Prioridade.hpp" />
-		<Unit filename="Senha.hpp" />
-		<Unit filename="Tempo.hpp" />
-		<Unit filename="Testador.cpp" />
-		<Unit filename="Testador.hpp" />
-		<Unit filename="Texto.hpp" />
-		<Unit filename="main.cpp" />
-		<Unit filename="testadores/codigos.txt" />
-		<Unit filename="testadores/datas.txt" />
-		<Unit filename="testadores/emails.txt" />
-		<Unit filename="testadores/papeis.txt" />
-		<Unit filename="testadores/prioridades.txt" />
-		<Unit filename="testadores/senhas.txt" />
-		<Unit filename="testadores/tempos.txt" />
-		<Unit filename="testadores/textos.txt" />
-		<Extensions />
-	</Project>
+    <FileVersion major="1" minor="6" />
+    <Project>
+        <Option title="Trabalho-TP1-2026" />
+        <Option pch_mode="2" />
+        <Option compiler="gcc" />
+        <Build>
+            <Target title="Debug">
+                <Option output="bin/Debug/Trabalho-TP1-2026" prefix_auto="1" extension_auto="1" />
+                <Option object_output="obj/Debug/" />
+                <Option type="1" />
+                <Option compiler="gcc" />
+                <Compiler>
+                    <Add option="-g" />
+                </Compiler>
+            </Target>
+            <Target title="Release">
+                <Option output="bin/Release/Trabalho-TP1-2026" prefix_auto="1" extension_auto="1" />
+                <Option object_output="obj/Release/" />
+                <Option type="1" />
+                <Option compiler="gcc" />
+                <Compiler>
+                    <Add option="-O2" />
+                </Compiler>
+                <Linker>
+                    <Add option="-s" />
+                </Linker>
+            </Target>
+        </Build>
+        <Compiler>
+            <Add option="-Wall" />
+            <Add option="-fexceptions" />
+            <Add option="-std=c++17" />
+            <Add directory="Dominios/include" />
+            <Add directory="Entidades" />
+            <Add directory="Controladoras" />
+            <Add directory="Interfaces" />
+        </Compiler>
+        <Unit filename="main.cpp" />
+
+        <Unit filename="Controladoras/ControladorAutenticacao.hpp" />
+        <Unit filename="Interfaces/IServicoAutenticacao.hpp" />
+
+        <Unit filename="Entidades/Pessoa.hpp" />
+        <Unit filename="Entidades/Projeto.hpp" />
+        <Unit filename="Entidades/Tarefa.hpp" />
+
+        <Unit filename="Dominios/include/Codigo.hpp" />
+        <Unit filename="Dominios/include/Data.hpp" />
+        <Unit filename="Dominios/include/Email.hpp" />
+        <Unit filename="Dominios/include/Estado.hpp" />
+        <Unit filename="Dominios/include/Papel.hpp" />
+        <Unit filename="Dominios/include/Prioridade.hpp" />
+        <Unit filename="Dominios/include/Senha.hpp" />
+        <Unit filename="Dominios/include/Tempo.hpp" />
+        <Unit filename="Dominios/include/Texto.hpp" />
+
+        <Unit filename="Dominios/src/Codigo.cpp" />
+        <Unit filename="Dominios/src/Data.cpp" />
+        <Unit filename="Dominios/src/Email.cpp" />
+        <Unit filename="Dominios/src/Estado.cpp" />
+        <Unit filename="Dominios/src/Papel.cpp" />
+        <Unit filename="Dominios/src/Prioridade.cpp" />
+        <Unit filename="Dominios/src/Senha.cpp" />
+        <Unit filename="Dominios/src/Tempo.cpp" />
+        <Unit filename="Dominios/src/Texto.cpp" />
+
+        <Extensions />
+    </Project>
 </CodeBlocks_project_file>
