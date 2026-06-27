@@ -1,0 +1,65 @@
+\doxysection{Historia\+Usuario.\+hpp}
+\hypertarget{_historia_usuario_8hpp_source}{}\label{_historia_usuario_8hpp_source}\index{Trabalho-\/TP1-\/2026/Entidades/HistoriaUsuario.hpp@{Trabalho-\/TP1-\/2026/Entidades/HistoriaUsuario.hpp}}
+\doxymbox{\hyperlink{_historia_usuario_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ HISTORIAUSUARIO\_HPP}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ HISTORIAUSUARIO\_HPP}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_codigo_8hpp}{../Dominios/include/Codigo.hpp}}"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_tempo_8hpp}{../Dominios/include/Tempo.hpp}}"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_prioridade_8hpp}{../Dominios/include/Prioridade.hpp}}"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_estado_8hpp}{../Dominios/include/Estado.hpp}}"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_papel_8hpp}{../Dominios/include/Papel.hpp}}"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_texto_8hpp}{../Dominios/include/Texto.hpp}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_email_8hpp}{../Dominios/include/Email.hpp}}"{}}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_historia_usuario}{HistoriaUsuario}}\ \{}
+\DoxyCodeLine{00013\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \ \ \ \ \doxymbox{\hyperlink{class_codigo}{Codigo}}\ codigo;}
+\DoxyCodeLine{00016\ \ \ \ \ \doxymbox{\hyperlink{class_codigo}{Codigo}}\ codigoProj;}
+\DoxyCodeLine{00017\ \ \ \ \ \doxymbox{\hyperlink{class_codigo}{Codigo}}\ codigoPlanoSprint;}
+\DoxyCodeLine{00018\ \ \ \ \ \doxymbox{\hyperlink{class_texto}{Texto}}\ nome;}
+\DoxyCodeLine{00019\ \ \ \ \ \doxymbox{\hyperlink{class_texto}{Texto}}\ descricaoPapel;}
+\DoxyCodeLine{00020\ \ \ \ \ \doxymbox{\hyperlink{class_texto}{Texto}}\ descricaoAcao;}
+\DoxyCodeLine{00021\ \ \ \ \ \doxymbox{\hyperlink{class_texto}{Texto}}\ descricaoValor;}
+\DoxyCodeLine{00022\ \ \ \ \ \doxymbox{\hyperlink{class_tempo}{Tempo}}\ estimativa;}
+\DoxyCodeLine{00023\ \ \ \ \ \doxymbox{\hyperlink{class_prioridade}{Prioridade}}\ prioridade;}
+\DoxyCodeLine{00024\ \ \ \ \ \doxymbox{\hyperlink{class_estado}{Estado}}\ estado;}
+\DoxyCodeLine{00025\ \ \ \ \ \doxymbox{\hyperlink{class_email}{Email}}\ email;}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_historia_usuario_aebd558411208327bed1ff55b06098b47}{setCodigo}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_codigo}{Codigo}}\&\ codigo)\ \{\ this-\/>codigo\ =\ codigo;\ \}}
+\DoxyCodeLine{00029\ \ \ \ \ \doxymbox{\hyperlink{class_codigo}{Codigo}}\ \doxymbox{\hyperlink{class_historia_usuario_a20d74309dc8d5f5c274ceb928247c93f}{getCodigo}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ codigo;\ \}}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_historia_usuario_ae491aae12dee9d0089ca18be58710ca2}{setCodigoProj}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_codigo}{Codigo}}\&\ codigoProj)\ \{\ this-\/>codigoProj\ =\ codigoProj;\ \}}
+\DoxyCodeLine{00032\ \ \ \ \ \doxymbox{\hyperlink{class_codigo}{Codigo}}\ \doxymbox{\hyperlink{class_historia_usuario_a3aeddcac6b890db08b32793585b483fa}{getCodigoProj}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ codigoProj;\ \}}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_historia_usuario_ade4bf3402bc9617042445b36ee04eae6}{setCodigoPlanoSprint}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_codigo}{Codigo}}\&\ codigoPlanoSprint)\ \{\ this-\/>codigoPlanoSprint\ =\ codigoPlanoSprint;\ \}}
+\DoxyCodeLine{00035\ \ \ \ \ \doxymbox{\hyperlink{class_codigo}{Codigo}}\ \doxymbox{\hyperlink{class_historia_usuario_a3b6e7b8ea3d0c9336d549beebd531dc0}{getCodigoPlanoSprint}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ codigoPlanoSprint;\ \}}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_historia_usuario_a42c374f36f468a6800c0c9d187b2fc5f}{setNome}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_texto}{Texto}}\&\ nome)\ \{\ this-\/>nome\ =\ nome;\ \}}
+\DoxyCodeLine{00038\ \ \ \ \ \doxymbox{\hyperlink{class_texto}{Texto}}\ \doxymbox{\hyperlink{class_historia_usuario_a10735a853a324a894919c8d001cff3b8}{getNome}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ nome;\ \}}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_historia_usuario_acb3ff6f1f969a021c6a91fbc07abebbf}{setDescricaoPapel}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_texto}{Texto}}\&\ papel)\ \{\ this-\/>descricaoPapel\ =\ papel;\ \}}
+\DoxyCodeLine{00041\ \ \ \ \ \doxymbox{\hyperlink{class_texto}{Texto}}\ \doxymbox{\hyperlink{class_historia_usuario_aeb09ff19bd2a9c7c65480e64b16ce1a8}{getDescricaoPapel}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ descricaoPapel;\ \}}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_historia_usuario_a325790d40411307c2af9ffb3b79ffe89}{setDescricaoAcao}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_texto}{Texto}}\&\ acao)\ \{\ this-\/>descricaoAcao\ =\ acao;\ \}}
+\DoxyCodeLine{00044\ \ \ \ \ \doxymbox{\hyperlink{class_texto}{Texto}}\ \doxymbox{\hyperlink{class_historia_usuario_aea3c3fab907649a3a08010573026c6cd}{getDescricaoAcao}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ descricaoAcao;\ \}}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_historia_usuario_ac36f77f2889791fd9a5bdfe29d8542de}{setDescricaoValor}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_texto}{Texto}}\&\ valor)\ \{\ this-\/>descricaoValor\ =\ valor;\ \}}
+\DoxyCodeLine{00047\ \ \ \ \ \doxymbox{\hyperlink{class_texto}{Texto}}\ \doxymbox{\hyperlink{class_historia_usuario_a57180cc5407e99979fe474ed7f3b0b36}{getDescricaoValor}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ descricaoValor;\ \}}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_historia_usuario_aad42619f49bd048c83a176b8ea595d1c}{setEstimativa}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_tempo}{Tempo}}\&\ estimativa)\ \{\ this-\/>estimativa\ =\ estimativa;\ \}}
+\DoxyCodeLine{00050\ \ \ \ \ \doxymbox{\hyperlink{class_tempo}{Tempo}}\ \doxymbox{\hyperlink{class_historia_usuario_ab1c3f740e55bbb62ec1eac15f9da1525}{getEstimativa}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ estimativa;\ \}}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_historia_usuario_ab20d4eb130c80748eb8d73d736db8df5}{setPrioridade}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_prioridade}{Prioridade}}\&\ prioridade)\ \{\ this-\/>prioridade\ =\ prioridade;\ \}}
+\DoxyCodeLine{00053\ \ \ \ \ \doxymbox{\hyperlink{class_prioridade}{Prioridade}}\ \doxymbox{\hyperlink{class_historia_usuario_a4932df4cb889365274edf09c8c3b82a7}{getPrioridade}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ prioridade;\ \}}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_historia_usuario_ad258b48abcefed706d82a5c02b33c250}{setEstado}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_estado}{Estado}}\&\ estado)\ \{\ this-\/>estado\ =\ estado;\ \}}
+\DoxyCodeLine{00056\ \ \ \ \ \doxymbox{\hyperlink{class_estado}{Estado}}\ \doxymbox{\hyperlink{class_historia_usuario_ad2773a4ff634386db5686dd8219874c4}{getEstado}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ estado;\ \}}
+\DoxyCodeLine{00057\ \};}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

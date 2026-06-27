@@ -1,0 +1,74 @@
+\doxysection{IServico\+Sprints Class Reference}
+\hypertarget{class_i_servico_sprints}{}\label{class_i_servico_sprints}\index{IServicoSprints@{IServicoSprints}}
+
+
+{\ttfamily \+\#include $<$IServico\+Sprints.\+hpp$>$}
+
+Inheritance diagram for IServico\+Sprints:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_i_servico_sprints}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \doxymbox{\hyperlink{class_i_servico_sprints_a188c4fdd1095f7c0ac30d27ee80f1fdb}{\texorpdfstring{$\sim$}{\string~}\+IServico\+Sprints}} ()
+\item 
+virtual bool \doxymbox{\hyperlink{class_i_servico_sprints_a252462e80f9ae2d5a4978ca85e537fe6}{salvar\+Sprint}} (const \doxymbox{\hyperlink{class_plano_sprint}{Plano\+Sprint}} \&plano\+Sprint)=0
+\item 
+virtual bool \doxymbox{\hyperlink{class_i_servico_sprints_a3b3dfed83834c1160e0020e13920c6ab}{excluir\+Sprint}} (const \doxymbox{\hyperlink{class_codigo}{Codigo}} \&sprint\+Id)=0
+\item 
+virtual \doxymbox{\hyperlink{class_plano_sprint}{Plano\+Sprint}} \doxymbox{\hyperlink{class_i_servico_sprints_a6ff8b3b6de665fb4ba0d86a8f54592e0}{buscar\+Sprint}} (const \doxymbox{\hyperlink{class_codigo}{Codigo}} \&sprint\+Id)=0
+\end{DoxyCompactItemize}
+
+
+\label{class_i_servico_sprints_doc-constructors}
+\Hypertarget{class_i_servico_sprints_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_i_servico_sprints_a188c4fdd1095f7c0ac30d27ee80f1fdb}\index{IServicoSprints@{IServicoSprints}!````~IServicoSprints@{\texorpdfstring{$\sim$}{\string~}IServicoSprints}}
+\index{````~IServicoSprints@{\texorpdfstring{$\sim$}{\string~}IServicoSprints}!IServicoSprints@{IServicoSprints}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}IServicoSprints()}{\string~IServicoSprints()}}
+{\footnotesize\ttfamily \label{class_i_servico_sprints_a188c4fdd1095f7c0ac30d27ee80f1fdb} 
+virtual IServico\+Sprints::\+\texorpdfstring{$\sim$}{\string~}\+IServico\+Sprints (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\label{class_i_servico_sprints_doc-func-members}
+\Hypertarget{class_i_servico_sprints_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_i_servico_sprints_a6ff8b3b6de665fb4ba0d86a8f54592e0}\index{IServicoSprints@{IServicoSprints}!buscarSprint@{buscarSprint}}
+\index{buscarSprint@{buscarSprint}!IServicoSprints@{IServicoSprints}}
+\doxysubsubsection{\texorpdfstring{buscarSprint()}{buscarSprint()}}
+{\footnotesize\ttfamily \label{class_i_servico_sprints_a6ff8b3b6de665fb4ba0d86a8f54592e0} 
+virtual \doxymbox{\hyperlink{class_plano_sprint}{Plano\+Sprint}} IServico\+Sprints::\+buscar\+Sprint (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_codigo}{Codigo}} \&}]{sprint\+Id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \doxymbox{\hyperlink{class_controlador_sprint_a8cc75d2dfbd9e32d84fcfad5e344e547}{Controlador\+Sprint}}.
+
+\Hypertarget{class_i_servico_sprints_a3b3dfed83834c1160e0020e13920c6ab}\index{IServicoSprints@{IServicoSprints}!excluirSprint@{excluirSprint}}
+\index{excluirSprint@{excluirSprint}!IServicoSprints@{IServicoSprints}}
+\doxysubsubsection{\texorpdfstring{excluirSprint()}{excluirSprint()}}
+{\footnotesize\ttfamily \label{class_i_servico_sprints_a3b3dfed83834c1160e0020e13920c6ab} 
+virtual bool IServico\+Sprints::\+excluir\+Sprint (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_codigo}{Codigo}} \&}]{sprint\+Id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \doxymbox{\hyperlink{class_controlador_sprint_a8efe5a17dadbadc9206709fd0d395613}{Controlador\+Sprint}}.
+
+\Hypertarget{class_i_servico_sprints_a252462e80f9ae2d5a4978ca85e537fe6}\index{IServicoSprints@{IServicoSprints}!salvarSprint@{salvarSprint}}
+\index{salvarSprint@{salvarSprint}!IServicoSprints@{IServicoSprints}}
+\doxysubsubsection{\texorpdfstring{salvarSprint()}{salvarSprint()}}
+{\footnotesize\ttfamily \label{class_i_servico_sprints_a252462e80f9ae2d5a4978ca85e537fe6} 
+virtual bool IServico\+Sprints::\+salvar\+Sprint (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_plano_sprint}{Plano\+Sprint}} \&}]{plano\+Sprint}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \doxymbox{\hyperlink{class_controlador_sprint_ae719cf68b522176ed2c3075c8ebb262e}{Controlador\+Sprint}}.
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+Trabalho-\/\+TP1-\/2026/\+\+Interfaces/\+\doxymbox{\hyperlink{_i_servico_sprints_8hpp}{IServico\+Sprints.\+hpp}}\end{DoxyCompactItemize}

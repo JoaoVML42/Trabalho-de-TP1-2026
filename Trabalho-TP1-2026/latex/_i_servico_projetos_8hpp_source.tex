@@ -1,0 +1,24 @@
+\doxysection{IServico\+Projetos.\+hpp}
+\hypertarget{_i_servico_projetos_8hpp_source}{}\label{_i_servico_projetos_8hpp_source}\index{Trabalho-\/TP1-\/2026/Interfaces/IServicoProjetos.hpp@{Trabalho-\/TP1-\/2026/Interfaces/IServicoProjetos.hpp}}
+\doxymbox{\hyperlink{_i_servico_projetos_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ ISERVICOPROJETOS\_HPP}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ ISERVICOPROJETOS\_HPP}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_projeto_8hpp}{../Entidades/Projeto.hpp}}"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_codigo_8hpp}{../Dominios/include/Codigo.hpp}}"{}}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_i_servico_projetos}{IServicoProjetos}}\ \{}
+\DoxyCodeLine{00008\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keyword}{virtual}\ \doxymbox{\hyperlink{class_i_servico_projetos_a78c0a55944b6e8fc8942df2d0a8da75d}{\string~IServicoProjetos}}()\ \{\}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_i_servico_projetos_ae2755239cd3d81a42c1f39e4fcd86f51}{salvarProjeto}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_projeto}{Projeto}}\&\ projeto)\ =\ 0;}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_i_servico_projetos_aa031ed34768acd0cbc10050d5e50bba2}{excluirProjeto}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_codigo}{Codigo}}\&\ projetoId)\ =\ 0;}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keyword}{virtual}\ \doxymbox{\hyperlink{class_projeto}{Projeto}}\ \doxymbox{\hyperlink{class_i_servico_projetos_af3df1ca5a95f927f50aeb61dbfcc8cac}{buscarProjeto}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_codigo}{Codigo}}\&\ projetoId)\ =\ 0;}
+\DoxyCodeLine{00016\ \};}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

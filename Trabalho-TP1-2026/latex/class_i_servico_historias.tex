@@ -1,0 +1,74 @@
+\doxysection{IServico\+Historias Class Reference}
+\hypertarget{class_i_servico_historias}{}\label{class_i_servico_historias}\index{IServicoHistorias@{IServicoHistorias}}
+
+
+{\ttfamily \+\#include $<$IServico\+Historias.\+hpp$>$}
+
+Inheritance diagram for IServico\+Historias:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_i_servico_historias}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \doxymbox{\hyperlink{class_i_servico_historias_ae9503216fc78b37b05caed4e89741558}{\texorpdfstring{$\sim$}{\string~}\+IServico\+Historias}} ()
+\item 
+virtual bool \doxymbox{\hyperlink{class_i_servico_historias_af5cbbbd7ce9f3e6718092828b3e19b26}{salvar\+Historia}} (const \doxymbox{\hyperlink{class_historia_usuario}{Historia\+Usuario}} \&historia)=0
+\item 
+virtual bool \doxymbox{\hyperlink{class_i_servico_historias_a2acff70e9587ec78cbd6b48147590a33}{excluir\+Historia}} (const \doxymbox{\hyperlink{class_codigo}{Codigo}} \&historia\+Id)=0
+\item 
+virtual \doxymbox{\hyperlink{class_historia_usuario}{Historia\+Usuario}} \doxymbox{\hyperlink{class_i_servico_historias_a2c44d9cb667989cbc043ad9e2e3bdbf1}{buscar\+Historia}} (const \doxymbox{\hyperlink{class_codigo}{Codigo}} \&historia\+Id)=0
+\end{DoxyCompactItemize}
+
+
+\label{class_i_servico_historias_doc-constructors}
+\Hypertarget{class_i_servico_historias_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_i_servico_historias_ae9503216fc78b37b05caed4e89741558}\index{IServicoHistorias@{IServicoHistorias}!````~IServicoHistorias@{\texorpdfstring{$\sim$}{\string~}IServicoHistorias}}
+\index{````~IServicoHistorias@{\texorpdfstring{$\sim$}{\string~}IServicoHistorias}!IServicoHistorias@{IServicoHistorias}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}IServicoHistorias()}{\string~IServicoHistorias()}}
+{\footnotesize\ttfamily \label{class_i_servico_historias_ae9503216fc78b37b05caed4e89741558} 
+virtual IServico\+Historias::\+\texorpdfstring{$\sim$}{\string~}\+IServico\+Historias (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\label{class_i_servico_historias_doc-func-members}
+\Hypertarget{class_i_servico_historias_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_i_servico_historias_a2c44d9cb667989cbc043ad9e2e3bdbf1}\index{IServicoHistorias@{IServicoHistorias}!buscarHistoria@{buscarHistoria}}
+\index{buscarHistoria@{buscarHistoria}!IServicoHistorias@{IServicoHistorias}}
+\doxysubsubsection{\texorpdfstring{buscarHistoria()}{buscarHistoria()}}
+{\footnotesize\ttfamily \label{class_i_servico_historias_a2c44d9cb667989cbc043ad9e2e3bdbf1} 
+virtual \doxymbox{\hyperlink{class_historia_usuario}{Historia\+Usuario}} IServico\+Historias::\+buscar\+Historia (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_codigo}{Codigo}} \&}]{historia\+Id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \doxymbox{\hyperlink{class_controlador_historia_ad4745147b1bfde9a366f9d4fc22a7221}{Controlador\+Historia}}.
+
+\Hypertarget{class_i_servico_historias_a2acff70e9587ec78cbd6b48147590a33}\index{IServicoHistorias@{IServicoHistorias}!excluirHistoria@{excluirHistoria}}
+\index{excluirHistoria@{excluirHistoria}!IServicoHistorias@{IServicoHistorias}}
+\doxysubsubsection{\texorpdfstring{excluirHistoria()}{excluirHistoria()}}
+{\footnotesize\ttfamily \label{class_i_servico_historias_a2acff70e9587ec78cbd6b48147590a33} 
+virtual bool IServico\+Historias::\+excluir\+Historia (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_codigo}{Codigo}} \&}]{historia\+Id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \doxymbox{\hyperlink{class_controlador_historia_a271972b1eb7b5e577ad0bf6242e38adf}{Controlador\+Historia}}.
+
+\Hypertarget{class_i_servico_historias_af5cbbbd7ce9f3e6718092828b3e19b26}\index{IServicoHistorias@{IServicoHistorias}!salvarHistoria@{salvarHistoria}}
+\index{salvarHistoria@{salvarHistoria}!IServicoHistorias@{IServicoHistorias}}
+\doxysubsubsection{\texorpdfstring{salvarHistoria()}{salvarHistoria()}}
+{\footnotesize\ttfamily \label{class_i_servico_historias_af5cbbbd7ce9f3e6718092828b3e19b26} 
+virtual bool IServico\+Historias::\+salvar\+Historia (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_historia_usuario}{Historia\+Usuario}} \&}]{historia}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \doxymbox{\hyperlink{class_controlador_historia_a772310e55fc9675f4dc386c4cdf4fc7a}{Controlador\+Historia}}.
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+Trabalho-\/\+TP1-\/2026/\+\+Interfaces/\+\doxymbox{\hyperlink{_i_servico_historias_8hpp}{IServico\+Historias.\+hpp}}\end{DoxyCompactItemize}

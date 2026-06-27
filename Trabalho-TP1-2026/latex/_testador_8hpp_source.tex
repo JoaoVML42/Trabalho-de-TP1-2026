@@ -1,0 +1,34 @@
+\doxysection{Testador.\+hpp}
+\hypertarget{_testador_8hpp_source}{}\label{_testador_8hpp_source}\index{Trabalho-\/TP1-\/2026/Dominios/include/Testador.hpp@{Trabalho-\/TP1-\/2026/Dominios/include/Testador.hpp}}
+\doxymbox{\hyperlink{_testador_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ TESTADOR\_HPP\_INCLUDED}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ TESTADOR\_HPP\_INCLUDED}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_codigo_8hpp}{Codigo.hpp}}"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_data_8hpp}{Data.hpp}}"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_estado_8hpp}{Estado.hpp}}"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_email_8hpp}{Email.hpp}}"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_senha_8hpp}{Senha.hpp}}"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_tempo_8hpp}{Tempo.hpp}}"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_testador_8hpp}{Testador.hpp}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_texto_8hpp}{Texto.hpp}}"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_papel_8hpp}{Papel.hpp}}"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_prioridade_8hpp}{Prioridade.hpp}}"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <fstream>}}
+\DoxyCodeLine{00014\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_teste}{Teste}}\ \{}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_teste_a93b8e7bca198458f23e07d4321931e67}{teste}}(\doxymbox{\hyperlink{class_codigo}{Codigo}}\ codigo);\ \textcolor{comment}{//\ codigo\ =\ 5\ caracteres,\ 2\ letras\ maiusculas,\ 3\ digitos.}}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_teste_a93b8e7bca198458f23e07d4321931e67}{teste}}(\doxymbox{\hyperlink{class_data}{Data}}\ data);\ \textcolor{comment}{//\ data\ =\ dd/mm/aaaa}}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_teste_a93b8e7bca198458f23e07d4321931e67}{teste}}(\doxymbox{\hyperlink{class_estado}{Estado}}\ estado);\ \textcolor{comment}{//\ A\ FAZER,\ FAZENDO,\ FEITO.}}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_teste_a93b8e7bca198458f23e07d4321931e67}{teste}}(\doxymbox{\hyperlink{class_senha}{Senha}}\ senha);\ \textcolor{comment}{//\ 6\ digitos,\ deve\ ter\ 1\ maiuscula,\ 1\ minuscula,\ 1\ numero.\ numeros\ e\ letras\ devem\ alternar.\ Apenas\ alfanumericos.}}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_teste_a93b8e7bca198458f23e07d4321931e67}{teste}}(\doxymbox{\hyperlink{class_tempo}{Tempo}}\ tempo);\ \textcolor{comment}{//\ valor\ de\ 1\ a\ 365}}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_teste_a93b8e7bca198458f23e07d4321931e67}{teste}}(\doxymbox{\hyperlink{class_papel}{Papel}}\ papel);\ \textcolor{comment}{//\ DESENVOLVEDOR,\ MESTRE\ SCRUM,\ PROPRIETARIO\ DE\ PRODUTO.}}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_teste_a93b8e7bca198458f23e07d4321931e67}{teste}}(\doxymbox{\hyperlink{class_prioridade}{Prioridade}}\ prioridade);\ \textcolor{comment}{//\ ALTA,\ MEDIA,\ BAIXA.}}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_teste_a93b8e7bca198458f23e07d4321931e67}{teste}}(\doxymbox{\hyperlink{class_email}{Email}}\ email);\ \textcolor{comment}{//\ parte1\ =\ 64chars,\ alphanum,\ .\ \&\ -\/;\ parte2\ =\ @...\ 255chars,\ alphanum,\ .\ \&\ -\/;\ char[0]\ !=\ .\ \&\ -\/;}}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_teste_a93b8e7bca198458f23e07d4321931e67}{teste}}(\doxymbox{\hyperlink{class_texto}{Texto}}\ texto);\ \textcolor{comment}{//\ 40char,\ deve\ comecar\ e\ terminar\ com\ alphanum,\ '.'\ \&\ ','\ nao\ podem\ se\ repetir\ ou\ vir\ depois\ de\ '\ ';}}
+\DoxyCodeLine{00027\ \};}
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ TESTADOR\_HPP\_INCLUDED}}
+
+\end{DoxyCode}

@@ -1,0 +1,40 @@
+\doxysection{Controlador\+Projetos.\+hpp}
+\hypertarget{_controlador_projetos_8hpp_source}{}\label{_controlador_projetos_8hpp_source}\index{Trabalho-\/TP1-\/2026/Controladoras/ControladorProjetos.hpp@{Trabalho-\/TP1-\/2026/Controladoras/ControladorProjetos.hpp}}
+\doxymbox{\hyperlink{_controlador_projetos_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ CONTROLADORPROJETOS\_HPP}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ CONTROLADOPROJETOS\_HPP}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_i_servico_projetos_8hpp}{../Interfaces/IServicoProjetos.hpp}}"{}}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_controlador_projetos}{ControladorProjetos}}\ :\ \textcolor{keyword}{public}\ \doxymbox{\hyperlink{class_i_servico_projetos}{IServicoProjetos}}\ \{}
+\DoxyCodeLine{00007\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_controlador_projetos_af81be0fd934e898a79026f0ebc17ba26}{salvarProjeto}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_projeto}{Projeto}}\&\ projeto)\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{00009\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (projeto.\doxymbox{\hyperlink{class_projeto_aab212a727dee680010ca2b6eb0f1e2f6}{getEmail}}().\doxymbox{\hyperlink{class_email_a8fa1da6448b64f4ae89662984b10e6b6}{get}}()\ ==\ \textcolor{stringliteral}{"{}admin@unb.br"{}})\{\ \textcolor{comment}{//\ primeiro\ devolve\ objeto\ Email\ e\ para\ extrair\ o\ texto\ chamamos\ o\ metodo\ .get()}}
+\DoxyCodeLine{00010\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00013\ \ \ \ \ \}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_controlador_projetos_a3aee60e193a1cdbaab53e3beb6456fad}{excluirProjeto}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_codigo}{Codigo}}\&\ projetoId)\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (projetoId.\doxymbox{\hyperlink{class_codigo_ac85ddffb159c47c1f4963d7ac0e3c031}{get}}()\ ==\ \textcolor{stringliteral}{"{}123456"{}})\{}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00020\ \ \ \ \ \}}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \ \ \ \ \doxymbox{\hyperlink{class_projeto}{Projeto}}\ \doxymbox{\hyperlink{class_controlador_projetos_a86f0fb8748fc5bedaa939db1c63e6b5a}{buscarProjeto}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_codigo}{Codigo}}\&\ projetoId)\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_projeto}{Projeto}}\ projetoFicticio;\ \textcolor{comment}{//\ cria\ objeto\ projeto\ em\ branco}}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ projetoFicticio.\doxymbox{\hyperlink{class_projeto_adb1e1098e1f9d1eb23d3cb407c827988}{setCodigo}}(projetoId);\ \textcolor{comment}{//\ id\ no\ que\ foi\ passado\ em\ parametro}}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_texto}{Texto}}\ nomeFicticio;\ \textcolor{comment}{//\ cria\ um\ nome\ usando\ o\ dominio\ texto}}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ nomeFicticio.\doxymbox{\hyperlink{class_texto_a114dbd3055a0b237987faf04901bcb2a}{set}}(\textcolor{stringliteral}{"{}projeto\ ficticio\ de\ teste"{}});}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ projetoFicticio.\doxymbox{\hyperlink{class_projeto_a8351e64a477c323e00ff46fcaec29b39}{setNome}}(nomeFicticio);}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ projetoFicticio;}
+\DoxyCodeLine{00031\ \ \ \ \ \}}
+\DoxyCodeLine{00032\ \};}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

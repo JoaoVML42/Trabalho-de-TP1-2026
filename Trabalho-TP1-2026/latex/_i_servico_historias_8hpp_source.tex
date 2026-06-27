@@ -1,0 +1,24 @@
+\doxysection{IServico\+Historias.\+hpp}
+\hypertarget{_i_servico_historias_8hpp_source}{}\label{_i_servico_historias_8hpp_source}\index{Trabalho-\/TP1-\/2026/Interfaces/IServicoHistorias.hpp@{Trabalho-\/TP1-\/2026/Interfaces/IServicoHistorias.hpp}}
+\doxymbox{\hyperlink{_i_servico_historias_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ ISERVICOHISTORIAS\_HPP}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ ISERVICOHISTORIAS\_HPP}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_historia_usuario_8hpp}{../Entidades/HistoriaUsuario.hpp}}"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_codigo_8hpp}{../Dominios/include/Codigo.hpp}}"{}}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_i_servico_historias}{IServicoHistorias}}\ \{}
+\DoxyCodeLine{00008\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keyword}{virtual}\ \doxymbox{\hyperlink{class_i_servico_historias_ae9503216fc78b37b05caed4e89741558}{\string~IServicoHistorias}}()\ \{\}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_i_servico_historias_af5cbbbd7ce9f3e6718092828b3e19b26}{salvarHistoria}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_historia_usuario}{HistoriaUsuario}}\&\ historia)\ =\ 0;}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_i_servico_historias_a2acff70e9587ec78cbd6b48147590a33}{excluirHistoria}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_codigo}{Codigo}}\&\ historiaId)\ =\ 0;}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keyword}{virtual}\ \doxymbox{\hyperlink{class_historia_usuario}{HistoriaUsuario}}\ \doxymbox{\hyperlink{class_i_servico_historias_a2c44d9cb667989cbc043ad9e2e3bdbf1}{buscarHistoria}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_codigo}{Codigo}}\&\ historiaId)\ =\ 0;}
+\DoxyCodeLine{00016\ \};}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

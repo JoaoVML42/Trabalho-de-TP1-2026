@@ -1,0 +1,24 @@
+\doxysection{IServico\+Sprints.\+hpp}
+\hypertarget{_i_servico_sprints_8hpp_source}{}\label{_i_servico_sprints_8hpp_source}\index{Trabalho-\/TP1-\/2026/Interfaces/IServicoSprints.hpp@{Trabalho-\/TP1-\/2026/Interfaces/IServicoSprints.hpp}}
+\doxymbox{\hyperlink{_i_servico_sprints_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ ISERVICOSPRINTS\_HPP}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ ISERVICOSPRINTS\_HPP}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_plano_sprint_8hpp}{../Entidades/PlanoSprint.hpp}}"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_codigo_8hpp}{../Dominios/include/Codigo.hpp}}"{}}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_i_servico_sprints}{IServicoSprints}}\ \{}
+\DoxyCodeLine{00008\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keyword}{virtual}\ \doxymbox{\hyperlink{class_i_servico_sprints_a188c4fdd1095f7c0ac30d27ee80f1fdb}{\string~IServicoSprints}}()\ \{\}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_i_servico_sprints_a252462e80f9ae2d5a4978ca85e537fe6}{salvarSprint}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_plano_sprint}{PlanoSprint}}\&\ planoSprint)\ =\ 0;}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_i_servico_sprints_a3b3dfed83834c1160e0020e13920c6ab}{excluirSprint}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_codigo}{Codigo}}\&\ sprintId)\ =\ 0;}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keyword}{virtual}\ \doxymbox{\hyperlink{class_plano_sprint}{PlanoSprint}}\ \doxymbox{\hyperlink{class_i_servico_sprints_a6ff8b3b6de665fb4ba0d86a8f54592e0}{buscarSprint}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_codigo}{Codigo}}\&\ sprintId)\ =\ 0;}
+\DoxyCodeLine{00016\ \};}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

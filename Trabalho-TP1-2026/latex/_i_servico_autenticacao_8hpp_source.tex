@@ -1,0 +1,23 @@
+\doxysection{IServico\+Autenticacao.\+hpp}
+\hypertarget{_i_servico_autenticacao_8hpp_source}{}\label{_i_servico_autenticacao_8hpp_source}\index{Trabalho-\/TP1-\/2026/Interfaces/IServicoAutenticacao.hpp@{Trabalho-\/TP1-\/2026/Interfaces/IServicoAutenticacao.hpp}}
+\doxymbox{\hyperlink{_i_servico_autenticacao_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ ISERVICOAUTENTICACAO\_HPP}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ ISERVICOAUTENTICACAO\_HPP}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_pessoa_8hpp}{../Entidades/Pessoa.hpp}}"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_email_8hpp}{../Dominios/include/Email.hpp}}"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_senha_8hpp}{../Dominios/include/Senha.hpp}}"{}}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_i_servico_autenticacao}{IServicoAutenticacao}}\ \{}
+\DoxyCodeLine{00009\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keyword}{virtual}\ \doxymbox{\hyperlink{class_i_servico_autenticacao_aa2f9ad33148b3b12a205e992079e4368}{\string~IServicoAutenticacao}}()\ \{\}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_i_servico_autenticacao_a4ced028dbd2064bf02dea267315fcc95}{autenticar}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_email}{Email}}\&\ email,\ \textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_senha}{Senha}}\&\ senha)\ =\ 0;}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_i_servico_autenticacao_aac46bd37e6761aede3db6004a3ccea5d}{cadastrarPessoa}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_pessoa}{Pessoa}}\&\ pessoa)\ =\ 0;}
+\DoxyCodeLine{00015\ \};}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

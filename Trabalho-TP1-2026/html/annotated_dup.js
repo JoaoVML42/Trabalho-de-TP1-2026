@@ -1,0 +1,25 @@
+var annotated_dup =
+[
+    [ "Codigo", "class_codigo.html", "class_codigo" ],
+    [ "ControladorAutenticacao", "class_controlador_autenticacao.html", "class_controlador_autenticacao" ],
+    [ "ControladorHistoria", "class_controlador_historia.html", "class_controlador_historia" ],
+    [ "ControladorProjetos", "class_controlador_projetos.html", "class_controlador_projetos" ],
+    [ "ControladorSprint", "class_controlador_sprint.html", "class_controlador_sprint" ],
+    [ "Data", "class_data.html", "class_data" ],
+    [ "Email", "class_email.html", "class_email" ],
+    [ "Estado", "class_estado.html", "class_estado" ],
+    [ "HistoriaUsuario", "class_historia_usuario.html", "class_historia_usuario" ],
+    [ "IServicoAutenticacao", "class_i_servico_autenticacao.html", "class_i_servico_autenticacao" ],
+    [ "IServicoHistorias", "class_i_servico_historias.html", "class_i_servico_historias" ],
+    [ "IServicoProjetos", "class_i_servico_projetos.html", "class_i_servico_projetos" ],
+    [ "IServicoSprints", "class_i_servico_sprints.html", "class_i_servico_sprints" ],
+    [ "Papel", "class_papel.html", "class_papel" ],
+    [ "Pessoa", "class_pessoa.html", "class_pessoa" ],
+    [ "PlanoSprint", "class_plano_sprint.html", "class_plano_sprint" ],
+    [ "Prioridade", "class_prioridade.html", "class_prioridade" ],
+    [ "Projeto", "class_projeto.html", "class_projeto" ],
+    [ "Senha", "class_senha.html", "class_senha" ],
+    [ "Tempo", "class_tempo.html", "class_tempo" ],
+    [ "Teste", "class_teste.html", "class_teste" ],
+    [ "Texto", "class_texto.html", "class_texto" ]
+];

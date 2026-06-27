@@ -1,0 +1,40 @@
+\doxysection{Controlador\+Sprint.\+hpp}
+\hypertarget{_controlador_sprint_8hpp_source}{}\label{_controlador_sprint_8hpp_source}\index{Trabalho-\/TP1-\/2026/Controladoras/ControladorSprint.hpp@{Trabalho-\/TP1-\/2026/Controladoras/ControladorSprint.hpp}}
+\doxymbox{\hyperlink{_controlador_sprint_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ CONTROLADORSPRINT\_HPP}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ CONTROLADORSPRINT\_HPP}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_i_servico_sprints_8hpp}{../Interfaces/IServicoSprints.hpp}}"{}}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_controlador_sprint}{ControladorSprint}}\ :\ \textcolor{keyword}{public}\ \doxymbox{\hyperlink{class_i_servico_sprints}{IServicoSprints}}\ \{}
+\DoxyCodeLine{00007\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_controlador_sprint_ae719cf68b522176ed2c3075c8ebb262e}{salvarSprint}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_plano_sprint}{PlanoSprint}}\&\ planoSprint)\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{00009\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (planoSprint.\doxymbox{\hyperlink{class_plano_sprint_a2779755a2e4430594af3e4896d538fc3}{getProjetoId}}().\doxymbox{\hyperlink{class_codigo_ac85ddffb159c47c1f4963d7ac0e3c031}{get}}()\ ==\ \textcolor{stringliteral}{"{}123456"{}})\{}
+\DoxyCodeLine{00010\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00013\ \ \ \ \ \}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_controlador_sprint_a8efe5a17dadbadc9206709fd0d395613}{excluirSprint}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_codigo}{Codigo}}\&\ sprintId)\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (sprintId.\doxymbox{\hyperlink{class_codigo_ac85ddffb159c47c1f4963d7ac0e3c031}{get}}()\ ==\ \textcolor{stringliteral}{"{}123456"{}})\{}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00020\ \ \ \ \ \}}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \ \ \ \ \doxymbox{\hyperlink{class_plano_sprint}{PlanoSprint}}\ \doxymbox{\hyperlink{class_controlador_sprint_a8cc75d2dfbd9e32d84fcfad5e344e547}{buscarSprint}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_codigo}{Codigo}}\&\ sprintId)\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_plano_sprint}{PlanoSprint}}\ sprintFicticio;}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ sprintFicticio.\doxymbox{\hyperlink{class_plano_sprint_ae2c0ad124a03703517d54e935dc573ed}{setCodigo}}(sprintId);}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_tempo}{Tempo}}\ tempoSprint;}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ tempoSprint.\doxymbox{\hyperlink{class_tempo_a00e17b2b2a0ace82095099d7eb89a281}{set}}(\textcolor{stringliteral}{"{}06/2030"{}});}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ sprintFicticio.\doxymbox{\hyperlink{class_plano_sprint_ac38110b0b07e7055a6b36fcab0e1ccf5}{setTempo}}(tempoSprint);}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ sprintFicticio;}
+\DoxyCodeLine{00031\ \ \ \ \ \}}
+\DoxyCodeLine{00032\ \};}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}
